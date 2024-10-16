@@ -1,0 +1,11 @@
+{
+  "name": "ejercicios-nodejs",
+  "version": "1.0.0",
+  "description": "Listado de ejercicios de NodeJs básicos para principiantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "izangildev",
+  "license": "ISC"
+}

@@ -1,0 +1,61 @@
+
+1. Servidor básico con rutas personalizadas:
+   - Crea un servidor HTTP utilizando el módulo `http` nativo.
+   - Define tres rutas diferentes (`/home`, `/about`, `/contact`) que devuelvan diferentes mensajes.
+   - Implementa una respuesta 404 para rutas desconocidas.
+
+2. Lectura y escritura de archivos:
+   - Utiliza el módulo `fs` para leer el contenido de un archivo `.txt` y mostrarlo en la consola.
+   - Luego, escribe una función que permita escribir datos en un nuevo archivo `.txt`.
+
+3. Módulos propios:
+   - Crea tu propio módulo con funciones que sumen, resten, multipliquen y dividan dos números.
+   - Impórtalo en otro archivo y usa las funciones desde ahí.
+
+4. Manejo de Promesas:
+   - Refactoriza el ejercicio de lectura/escritura de archivos utilizando Promesas en lugar de callbacks.
+   - Asegúrate de manejar los errores correctamente con `.catch()`.
+
+5. Servidor con Express.js básico:
+   - Implementa un servidor con Express.js que maneje las mismas rutas que en el ejercicio 1.
+   - Incluye un middleware que registre en la consola cada petición entrante con su ruta y método HTTP.
+
+6. API de frases aleatorias:
+   - Crea una API REST con Express que devuelva frases aleatorias de una lista en formato JSON en la ruta `/frase`.
+   - Usa una base de datos sencilla (como un array en memoria) para almacenar las frases.
+
+7. Petición HTTP a una API externa:
+   - Utiliza `node-fetch` u otra librería similar para hacer una petición a una API externa (por ejemplo, la API de GitHub).
+   - Muestra en consola los datos recibidos de la API, como el número de repositorios de un usuario.
+
+8. Manejo de JSON y rutas dinámicas:
+   - Implementa una API REST que devuelva información de usuarios (id, nombre, edad) almacenados en un archivo `.json`.
+   - Define rutas dinámicas como `/usuario/:id` para devolver los detalles de un usuario específico.
+
+9. Middleware personalizado:
+   - Crea un middleware en Express que autentique las peticiones con un "token" sencillo (puede ser un string que revises manualmente).
+   - Solo permite acceder a una ruta específica (`/private`) si el "token" es válido.
+
+10. CRUD con Express y archivos:
+   - Implementa una API CRUD (Create, Read, Update, Delete) para gestionar un recurso (por ejemplo, tareas de una lista de "to-do").
+   - Guarda los datos en un archivo JSON en lugar de una base de datos.
+
+11. Autenticación básica con JWT:
+   - Añade autenticación a tu API usando JSON Web Tokens (JWT).
+   - Implementa un endpoint `/login` que valide un usuario (con una lista en memoria o archivo) y devuelva un token JWT válido.
+
+12. Manejo de errores global:
+   - Crea un middleware global en Express que capture cualquier error no manejado en las rutas y devuelva un mensaje de error consistente.
+   - Usa `try-catch` dentro de las rutas para lanzar excepciones controladas.
+
+13. Conexión a base de datos con MongoDB:
+   - Usa `mongoose` para conectar tu servidor a una base de datos MongoDB.
+   - Implementa un modelo simple de "usuarios" y crea una ruta para crear nuevos usuarios y listarlos desde la base de datos.
+
+14. Sockets en tiempo real:
+   - Añade comunicación en tiempo real a tu servidor usando `socket.io`.
+   - Crea una aplicación donde varios clientes puedan conectarse y recibir un mensaje cada vez que alguien más se conecta o envía un mensaje.
+
+15. Validación de datos con Express y Joi:
+   - Implementa validaciones de los datos enviados en las rutas POST o PUT utilizando la librería `Joi`.
+   - Asegúrate de devolver errores claros cuando los datos no cumplan con las reglas de validación.
